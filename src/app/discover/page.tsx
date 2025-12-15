@@ -45,7 +45,7 @@ export default async function DiscoverPage() {
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               Discover Places
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Explore Before You Visit
             </h1>
             <p className="text-xl text-white/70 mb-8">
