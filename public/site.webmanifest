@@ -1,0 +1,16 @@
+{
+  "name": "Z360 Virtual Tours",
+  "short_name": "Z360",
+  "description": "Professional 360° Virtual Tour Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0066FF",
+  "icons": [
+    {
+      "src": "/images/logo-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

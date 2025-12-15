@@ -97,7 +97,7 @@ export default function Hero() {
             <div className="relative bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 p-10 overflow-hidden">
               {/* Preview Image Placeholder */}
               <div className="aspect-video bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl mb-8 flex items-center justify-center group cursor-pointer overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/images/tour-preview.jpg')] bg-cover bg-center opacity-50" />
+                <div className="absolute inset-0 bg-[url('/images/tour-preview.svg')] bg-cover bg-center opacity-50" />
                 <div className="relative w-24 h-24 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 group-hover:bg-[#0066FF] transition-all duration-300">
                   <Play className="w-10 h-10 text-white fill-white ml-1" />
                 </div>

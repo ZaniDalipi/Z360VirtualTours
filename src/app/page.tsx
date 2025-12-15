@@ -136,7 +136,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-video bg-slate-200 rounded-3xl overflow-hidden relative group cursor-pointer">
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
-                  <div className="absolute inset-0 bg-[url('/images/about-preview.jpg')] bg-cover bg-center opacity-50" />
+                  <div className="absolute inset-0 bg-[url('/images/about-preview.svg')] bg-cover bg-center opacity-50" />
                   <div className="relative w-24 h-24 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 group-hover:bg-[#0066FF] transition-all">
                     <Play className="w-10 h-10 text-white fill-white ml-1" />
                   </div>
