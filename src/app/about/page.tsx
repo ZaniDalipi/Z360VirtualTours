@@ -74,13 +74,13 @@ const team = [
 
 export default function AboutPage() {
   return (
-    <div className="pt-24 pb-16">
+    <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
@@ -123,7 +123,7 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="section">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
@@ -178,7 +178,7 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="section bg-slate-50">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 border border-slate-200">
               <div className="w-14 h-14 rounded-xl bg-[#0066FF]/10 flex items-center justify-center mb-6">
@@ -209,7 +209,7 @@ export default function AboutPage() {
 
       {/* Our Values */}
       <section className="section">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
               What Drives Us
@@ -244,7 +244,7 @@ export default function AboutPage() {
 
       {/* Team */}
       <section className="section bg-slate-900 text-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
               Meet the Team
@@ -281,7 +281,7 @@ export default function AboutPage() {
 
       {/* Why Choose Us */}
       <section className="section">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
@@ -340,7 +340,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-4 mt-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="bg-slate-900 rounded-3xl p-12 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
           <div className="relative z-10">

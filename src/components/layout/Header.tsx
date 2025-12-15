@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronDown, Camera, Phone, Search } from 'lucide-react';
+import { Menu, X, Camera, Phone, Search } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navigation = [
@@ -20,10 +20,16 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  // Check if we're on the homepage
+  const isHomePage = pathname === '/';
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+
+    // Set initial state
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -33,36 +39,35 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
+  // Determine if header should be transparent (only on homepage when not scrolled)
+  const isTransparent = isHomePage && !isScrolled;
+
   return (
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+        isTransparent
+          ? 'bg-slate-900/80 backdrop-blur-md'
+          : 'bg-white shadow-md'
       )}
     >
-      <div className="container mx-auto px-4">
-        <nav className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className={cn(
-              'w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300',
-              'bg-gradient-to-br from-[#0066FF] to-[#00D4FF]',
-              'group-hover:scale-105 group-hover:shadow-lg'
-            )}>
-              <Camera className="w-6 h-6 text-white" />
+          <Link href="/" className="flex items-center gap-2 sm:gap-3">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#0066FF] to-[#00D4FF] shadow-lg">
+              <Camera className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
             </div>
             <div className="flex flex-col">
               <span className={cn(
-                'font-bold text-xl tracking-tight transition-colors',
-                isScrolled ? 'text-slate-900' : 'text-white'
+                'font-bold text-lg lg:text-xl tracking-tight',
+                isTransparent ? 'text-white' : 'text-slate-900'
               )}>
                 Z360
               </span>
               <span className={cn(
-                'text-xs font-medium tracking-wider uppercase transition-colors',
-                isScrolled ? 'text-slate-500' : 'text-white/70'
+                'text-[10px] lg:text-xs font-medium tracking-wider uppercase hidden sm:block',
+                isTransparent ? 'text-white/70' : 'text-slate-500'
               )}>
                 Virtual Tours
               </span>
@@ -78,12 +83,12 @@ export default function Header() {
                 className={cn(
                   'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
                   pathname === item.href
-                    ? isScrolled
-                      ? 'bg-[#0066FF]/10 text-[#0066FF]'
-                      : 'bg-white/20 text-white'
-                    : isScrolled
-                      ? 'text-slate-600 hover:text-[#0066FF] hover:bg-slate-100'
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                    ? isTransparent
+                      ? 'bg-white/20 text-white'
+                      : 'bg-[#0066FF] text-white'
+                    : isTransparent
+                      ? 'text-white/90 hover:text-white hover:bg-white/10'
+                      : 'text-slate-600 hover:text-[#0066FF] hover:bg-slate-100'
                 )}
               >
                 {item.name}
@@ -92,21 +97,20 @@ export default function Header() {
           </div>
 
           {/* Right Actions */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Link
-              href="/search"
+          <div className="hidden lg:flex items-center gap-3">
+            <button
               className={cn(
                 'p-2 rounded-lg transition-colors',
-                isScrolled
-                  ? 'text-slate-600 hover:text-[#0066FF] hover:bg-slate-100'
-                  : 'text-white/80 hover:text-white hover:bg-white/10'
+                isTransparent
+                  ? 'text-white/80 hover:text-white hover:bg-white/10'
+                  : 'text-slate-600 hover:text-[#0066FF] hover:bg-slate-100'
               )}
             >
               <Search className="w-5 h-5" />
-            </Link>
+            </button>
             <Link
               href="/contact"
-              className="btn btn-primary"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0066FF] text-white rounded-lg font-semibold text-sm hover:bg-[#0052CC] transition-colors shadow-lg shadow-blue-500/25"
             >
               <Phone className="w-4 h-4" />
               Get a Quote
@@ -118,9 +122,9 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={cn(
               'lg:hidden p-2 rounded-lg transition-colors',
-              isScrolled
-                ? 'text-slate-600 hover:bg-slate-100'
-                : 'text-white hover:bg-white/10'
+              isTransparent
+                ? 'text-white hover:bg-white/10'
+                : 'text-slate-600 hover:bg-slate-100'
             )}
           >
             {isMobileMenuOpen ? (
@@ -132,38 +136,35 @@ export default function Header() {
         </nav>
 
         {/* Mobile Navigation */}
-        <div
-          className={cn(
-            'lg:hidden overflow-hidden transition-all duration-300',
-            isMobileMenuOpen ? 'max-h-96 pb-6' : 'max-h-0'
-          )}
-        >
-          <div className="flex flex-col gap-2 pt-4 border-t border-slate-200/20">
-            {navigation.map((item) => (
+        {isMobileMenuOpen && (
+          <div className="lg:hidden pb-4 border-t border-slate-200/20">
+            <div className="flex flex-col gap-1 pt-4">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={cn(
+                    'px-4 py-3 rounded-lg text-sm font-medium transition-all',
+                    pathname === item.href
+                      ? 'bg-[#0066FF] text-white'
+                      : isTransparent
+                        ? 'text-white/90 hover:bg-white/10'
+                        : 'text-slate-600 hover:bg-slate-100'
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
               <Link
-                key={item.name}
-                href={item.href}
-                className={cn(
-                  'px-4 py-3 rounded-lg text-sm font-medium transition-all',
-                  pathname === item.href
-                    ? 'bg-[#0066FF] text-white'
-                    : isScrolled
-                      ? 'text-slate-600 hover:bg-slate-100'
-                      : 'text-white/80 hover:bg-white/10'
-                )}
+                href="/contact"
+                className="mt-2 mx-4 inline-flex items-center justify-center gap-2 px-5 py-3 bg-[#0066FF] text-white rounded-lg font-semibold text-sm hover:bg-[#0052CC] transition-colors"
               >
-                {item.name}
+                <Phone className="w-4 h-4" />
+                Get a Quote
               </Link>
-            ))}
-            <Link
-              href="/contact"
-              className="btn btn-primary mt-4"
-            >
-              <Phone className="w-4 h-4" />
-              Get a Quote
-            </Link>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </header>
   );

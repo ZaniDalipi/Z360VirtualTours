@@ -62,7 +62,7 @@ export default function Footer() {
     <footer className="bg-slate-900 text-white">
       {/* CTA Section */}
       <div className="border-b border-slate-800">
-        <div className="container mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-2xl p-8 lg:p-12">
             <div className="text-center lg:text-left">
               <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
@@ -198,7 +198,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-slate-800">
-        <div className="container mx-auto px-4 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-slate-400 text-sm">
               <Globe className="w-4 h-4" />
@@ -227,7 +227,7 @@ export default function Footer() {
 
       {/* Platform Badges */}
       <div className="border-t border-slate-800 bg-slate-950">
-        <div className="container mx-auto px-4 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-500">
             <span>Compatible with:</span>
             <span className="px-3 py-1 rounded-full bg-slate-800">Matterport</span>

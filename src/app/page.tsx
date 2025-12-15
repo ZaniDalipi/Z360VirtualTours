@@ -17,7 +17,7 @@ export default function HomePage() {
 
       {/* How It Works Section */}
       <section className="section">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
               Our Process
@@ -91,7 +91,7 @@ export default function HomePage() {
 
       {/* Why Choose Us Section */}
       <section className="section">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div>
@@ -166,7 +166,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               Ready to Showcase Your Space?
