@@ -6,13 +6,8 @@
       "password": "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/X4.F7gK6kPfqEQVQe",
       "name": "Admin",
       "role": "admin",
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     }
   ],
   "categories": [
@@ -25,13 +20,8 @@
       "icon": "Home",
       "order": 1,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "2",
@@ -42,13 +32,8 @@
       "icon": "Building2",
       "order": 2,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "3",
@@ -59,13 +44,8 @@
       "icon": "MapPin",
       "order": 3,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "4",
@@ -76,13 +56,8 @@
       "icon": "Hotel",
       "order": 4,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "5",
@@ -93,13 +68,8 @@
       "icon": "GraduationCap",
       "order": 5,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "6",
@@ -110,13 +80,8 @@
       "icon": "Heart",
       "order": 6,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "7",
@@ -127,13 +92,8 @@
       "icon": "Car",
       "order": 7,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "8",
@@ -144,13 +104,8 @@
       "icon": "Landmark",
       "order": 8,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     }
   ],
   "tours": [
@@ -194,13 +149,8 @@
       "isFeatured": true,
       "isPublished": true,
       "views": 1250,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "2",
@@ -238,14 +188,9 @@
       ],
       "isFeatured": true,
       "isPublished": true,
-      "views": 890,
-<<<<<<< HEAD
+      "views": 891,
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "3",
@@ -287,13 +232,8 @@
       "isFeatured": true,
       "isPublished": true,
       "views": 2100,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "4",
@@ -334,13 +274,8 @@
       "isFeatured": false,
       "isPublished": true,
       "views": 650,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "5",
@@ -380,13 +315,8 @@
       "isFeatured": true,
       "isPublished": true,
       "views": 3200,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "6",
@@ -425,13 +355,8 @@
       "isFeatured": false,
       "isPublished": true,
       "views": 1800,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     }
   ],
   "services": [
@@ -456,13 +381,8 @@
       },
       "order": 1,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "2",
@@ -486,13 +406,8 @@
       },
       "order": 2,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "3",
@@ -515,13 +430,8 @@
       },
       "order": 3,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "4",
@@ -544,13 +454,8 @@
       },
       "order": 4,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "5",
@@ -573,13 +478,8 @@
       },
       "order": 5,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "6",
@@ -602,13 +502,8 @@
       },
       "order": 6,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     }
   ],
   "testimonials": [
@@ -620,11 +515,7 @@
       "content": "Z360 Virtual Tours transformed how I showcase properties. My listings now get 3x more engagement, and buyers feel like they have already visited the home before scheduling a showing. Absolutely game-changing!",
       "rating": 5,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "2",
@@ -634,11 +525,7 @@
       "content": "The virtual tour of our hotel has significantly increased our direct bookings. Guests love being able to explore our rooms and amenities before they arrive. The quality of the 360° photography is exceptional.",
       "rating": 5,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "3",
@@ -648,11 +535,7 @@
       "content": "Our Google Street View tour has driven more foot traffic to our restaurant than any other marketing we have done. Z360 was professional, efficient, and delivered beyond our expectations.",
       "rating": 5,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     },
     {
       "id": "4",
@@ -662,11 +545,7 @@
       "content": "The virtual museum tour has allowed us to reach audiences worldwide who could never visit in person. The attention to detail and the interactive features make it feel like a real visit.",
       "rating": 5,
       "isActive": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     }
   ],
   "contactSubmissions": [],
@@ -697,13 +576,8 @@
       "reviewCount": 127,
       "isVerified": true,
       "isFeatured": true,
-<<<<<<< HEAD
       "createdAt": "2025-12-15T22:07:27.664Z",
       "updatedAt": "2025-12-15T22:07:27.664Z"
-=======
-      "createdAt": "2025-12-15T22:10:43.680Z",
-      "updatedAt": "2025-12-15T22:10:43.680Z"
->>>>>>> refs/remotes/origin/claude/360-virtual-tours-app-ehQQX
     }
   ],
   "settings": {
