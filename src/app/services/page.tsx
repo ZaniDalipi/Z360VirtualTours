@@ -32,13 +32,13 @@ export default async function ServicesPage() {
   const services = await getServices({ active: true });
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 mb-16 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-32 pb-20 mb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               What We Offer
@@ -59,7 +59,7 @@ export default async function ServicesPage() {
       </section>
 
       {/* Services */}
-      <section className="container mx-auto px-4">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-24">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon] || Camera;
@@ -144,7 +144,7 @@ export default async function ServicesPage() {
       </section>
 
       {/* Platform Support */}
-      <section className="container mx-auto px-4 mt-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
         <div className="bg-slate-900 rounded-3xl p-12 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#0066FF]/20 rounded-full blur-3xl" />
@@ -186,7 +186,7 @@ export default async function ServicesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="container mx-auto px-4 mt-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">
             Frequently Asked Questions
@@ -238,7 +238,7 @@ export default async function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-4 mt-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
         <div className="bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-3xl p-12 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Get Started?

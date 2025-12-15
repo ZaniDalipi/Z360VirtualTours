@@ -45,7 +45,7 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#00D4FF]/10 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-2 block">

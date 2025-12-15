@@ -149,13 +149,13 @@ async function PortfolioContent({ searchParams }: PortfolioPageProps) {
 
 export default function PortfolioPage(props: PortfolioPageProps) {
   return (
-    <div className="pt-24 pb-16">
+    <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 mb-12 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-32 pb-20 mb-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               Our Work
@@ -172,7 +172,7 @@ export default function PortfolioPage(props: PortfolioPageProps) {
       </section>
 
       {/* Content */}
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Suspense fallback={
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[...Array(6)].map((_, i) => (

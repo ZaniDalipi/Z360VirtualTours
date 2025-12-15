@@ -33,14 +33,14 @@ export default async function DiscoverPage() {
   const recentTours = tours.slice(0, 6);
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-[#00D4FF]/10 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               Discover Places
@@ -91,7 +91,7 @@ export default async function DiscoverPage() {
 
       {/* Categories */}
       <section className="section bg-slate-50">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl font-bold text-slate-900">Browse by Category</h2>
@@ -121,7 +121,7 @@ export default async function DiscoverPage() {
       {/* Featured Places */}
       {featuredPlaces.length > 0 && (
         <section className="section">
-          <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -225,7 +225,7 @@ export default async function DiscoverPage() {
 
       {/* Recent Tours */}
       <section className="section bg-slate-900 text-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -273,7 +273,7 @@ export default async function DiscoverPage() {
 
       {/* Add Your Business CTA */}
       <section className="section">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-3xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
             <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
