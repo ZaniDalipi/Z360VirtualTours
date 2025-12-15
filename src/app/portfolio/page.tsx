@@ -151,19 +151,19 @@ export default function PortfolioPage(props: PortfolioPageProps) {
   return (
     <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-40 pb-24 mb-16 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-44 pb-32 mb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
               Our Work
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
               Virtual Tour Portfolio
             </h1>
-            <p className="text-xl text-white/70">
+            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
               Explore our collection of immersive 360° virtual tours across various industries.
               Each project showcases our commitment to quality and innovation.
             </p>
@@ -172,7 +172,7 @@ export default function PortfolioPage(props: PortfolioPageProps) {
       </section>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         <Suspense fallback={
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[...Array(6)].map((_, i) => (

@@ -59,19 +59,19 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-40 pb-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-44 pb-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
               Get in Touch
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
               Let&apos;s Create Something Amazing
             </h1>
-            <p className="text-xl text-white/70">
+            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
               Ready to transform your space into an immersive 360° experience?
               Contact us today for a free consultation and quote.
             </p>
@@ -80,49 +80,49 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid lg:grid-cols-3 gap-16">
+      <section className="py-32 lg:py-40">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="grid lg:grid-cols-3 gap-20">
             {/* Contact Info */}
             <div className="lg:col-span-1 space-y-8">
               {/* Contact Cards */}
-              <div className="space-y-4">
-                <div className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-[#0066FF]" />
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-5">
+                    <div className="w-14 h-14 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-7 h-7 text-[#0066FF]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900 mb-1">Email Us</h3>
-                      <a href="mailto:info@z360virtualtours.com" className="text-slate-600 hover:text-[#0066FF] transition-colors">
+                      <h3 className="font-semibold text-slate-900 text-lg mb-2">Email Us</h3>
+                      <a href="mailto:info@z360virtualtours.com" className="text-slate-600 text-lg hover:text-[#0066FF] transition-colors">
                         info@z360virtualtours.com
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-[#0066FF]" />
+                <div className="bg-white rounded-xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-5">
+                    <div className="w-14 h-14 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-7 h-7 text-[#0066FF]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900 mb-1">Call Us</h3>
-                      <a href="tel:+15553600000" className="text-slate-600 hover:text-[#0066FF] transition-colors">
+                      <h3 className="font-semibold text-slate-900 text-lg mb-2">Call Us</h3>
+                      <a href="tel:+15553600000" className="text-slate-600 text-lg hover:text-[#0066FF] transition-colors">
                         +1 (555) 360-TOUR
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-[#0066FF]" />
+                <div className="bg-white rounded-xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-5">
+                    <div className="w-14 h-14 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-7 h-7 text-[#0066FF]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900 mb-1">Visit Us</h3>
-                      <p className="text-slate-600">
+                      <h3 className="font-semibold text-slate-900 text-lg mb-2">Visit Us</h3>
+                      <p className="text-slate-600 text-lg leading-relaxed">
                         123 Virtual Drive<br />
                         Los Angeles, CA 90001<br />
                         United States
@@ -131,14 +131,14 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-[#0066FF]" />
+                <div className="bg-white rounded-xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start gap-5">
+                    <div className="w-14 h-14 rounded-lg bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-7 h-7 text-[#0066FF]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900 mb-1">Business Hours</h3>
-                      <p className="text-slate-600">
+                      <h3 className="font-semibold text-slate-900 text-lg mb-2">Business Hours</h3>
+                      <p className="text-slate-600 text-lg leading-relaxed">
                         Monday - Friday: 9am - 6pm<br />
                         Saturday: 10am - 4pm<br />
                         Sunday: Closed
@@ -149,12 +149,12 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Response Promise */}
-              <div className="bg-[#0066FF]/5 rounded-xl p-6 border border-[#0066FF]/20">
-                <div className="flex items-center gap-3 mb-3">
-                  <MessageSquare className="w-6 h-6 text-[#0066FF]" />
-                  <h3 className="font-semibold text-slate-900">Quick Response</h3>
+              <div className="bg-[#0066FF]/5 rounded-xl p-8 border border-[#0066FF]/20">
+                <div className="flex items-center gap-4 mb-4">
+                  <MessageSquare className="w-7 h-7 text-[#0066FF]" />
+                  <h3 className="font-semibold text-slate-900 text-lg">Quick Response</h3>
                 </div>
-                <p className="text-slate-600 text-sm">
+                <p className="text-slate-600 text-lg">
                   We typically respond to inquiries within 2-4 business hours.
                   For urgent matters, please call us directly.
                 </p>
@@ -163,8 +163,8 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              <div className="bg-white rounded-2xl border border-slate-200 p-10 shadow-sm">
+                <h2 className="text-3xl font-bold text-slate-900 mb-8">
                   Send Us a Message
                 </h2>
 
@@ -356,22 +356,22 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20">
+      <section className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 mt-24">
         <div className="bg-slate-200 rounded-2xl h-96 flex items-center justify-center">
           <div className="text-center">
-            <MapPin className="w-12 h-12 text-slate-400 mx-auto mb-4" />
-            <p className="text-slate-600">Interactive map would be displayed here</p>
+            <MapPin className="w-16 h-16 text-slate-400 mx-auto mb-6" />
+            <p className="text-slate-600 text-lg">Interactive map would be displayed here</p>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 mb-24">
-        <div className="bg-slate-50 rounded-2xl p-10 lg:p-14">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
+      <section className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 mt-24 mb-32">
+        <div className="bg-slate-50 rounded-2xl p-12 lg:p-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
             Quick Answers
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {[
               {
                 q: 'How quickly can you complete a tour?',
@@ -391,8 +391,8 @@ export default function ContactPage() {
               },
             ].map((item, index) => (
               <div key={index}>
-                <h3 className="font-semibold text-slate-900 mb-2">{item.q}</h3>
-                <p className="text-slate-600">{item.a}</p>
+                <h3 className="font-semibold text-slate-900 text-xl mb-3">{item.q}</h3>
+                <p className="text-slate-600 text-lg leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>

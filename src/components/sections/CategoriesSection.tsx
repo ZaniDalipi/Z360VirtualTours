@@ -32,28 +32,28 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
   const categoriesData = categories || await getCategories({ active: true });
 
   return (
-    <section className="py-24 lg:py-32 bg-slate-900 text-white relative overflow-hidden">
+    <section className="py-32 lg:py-40 bg-slate-900 text-white relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
             Industries We Serve
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
             Virtual Tours for Every Industry
           </h2>
-          <p className="text-white/70 text-lg">
+          <p className="text-white/70 text-xl leading-relaxed">
             From real estate to hospitality, education to healthcare - we create immersive
             experiences tailored to your needs.
           </p>
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {categoriesData.map((category) => {
             const Icon = iconMap[category.icon] || Building2;
 
@@ -61,12 +61,12 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
               <Link
                 key={category.id}
                 href={`/portfolio?category=${category.slug}`}
-                className="group flex flex-col items-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#0066FF]/50 transition-all text-center"
+                className="group flex flex-col items-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#0066FF]/50 transition-all text-center"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Icon className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Icon className="w-8 h-8 text-white" />
                 </div>
-                <span className="text-white font-medium group-hover:text-[#00D4FF] transition-colors">
+                <span className="text-white text-lg font-medium group-hover:text-[#00D4FF] transition-colors">
                   {category.name}
                 </span>
               </Link>
@@ -75,11 +75,11 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
-          <p className="text-white/60 mb-6">
+        <div className="text-center mt-16">
+          <p className="text-white/60 text-lg mb-8">
             Don&apos;t see your industry? We work with businesses of all types.
           </p>
-          <Link href="/contact" className="btn bg-white text-slate-900 hover:bg-slate-100 px-8 py-4">
+          <Link href="/contact" className="btn bg-white text-slate-900 hover:bg-slate-100 px-10 py-5 text-lg">
             Contact Us
             <ArrowRight className="w-5 h-5" />
           </Link>

@@ -44,29 +44,29 @@ export default function HomePage() {
       <Hero />
 
       {/* How It Works */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+      <section className="py-32 lg:py-40 bg-white">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
               Our Process
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8">
               How We Create Your Tour
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-slate-600 text-xl leading-relaxed">
               From consultation to delivery, we handle everything to ensure your virtual tour
               exceeds expectations.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
             {processSteps.map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white font-bold text-xl">{item.step}</span>
+              <div key={index} className="text-center p-6">
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mx-auto mb-8">
+                  <span className="text-white font-bold text-2xl">{item.step}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{item.title}</h3>
-                <p className="text-slate-600">{item.description}</p>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4">{item.title}</h3>
+                <p className="text-slate-600 text-lg leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -80,22 +80,22 @@ export default function HomePage() {
       <CategoriesSection />
 
       {/* Why Choose Us */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+      <section className="py-32 lg:py-40 bg-white">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
               Why Choose Us
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8">
               The Z360 Advantage
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-slate-600 text-xl leading-relaxed">
               We combine cutting-edge technology with creative expertise to deliver
               virtual tours that captivate and convert.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               'Professional 360° photography with HDR processing',
               'Compatible with all major platforms',
@@ -104,9 +104,9 @@ export default function HomePage() {
               'Fast turnaround and dedicated support',
               'SEO-optimized tours for better visibility',
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors">
-                <CheckCircle className="w-6 h-6 text-[#0066FF] flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700">{item}</span>
+              <div key={index} className="flex items-start gap-5 p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors">
+                <CheckCircle className="w-7 h-7 text-[#0066FF] flex-shrink-0 mt-0.5" />
+                <span className="text-slate-700 text-lg">{item}</span>
               </div>
             ))}
           </div>
@@ -114,26 +114,26 @@ export default function HomePage() {
       </section>
 
       {/* Platforms */}
-      <section className="py-24 lg:py-32 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+      <section className="py-32 lg:py-40 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
               Platform Support
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
               Works With Your Favorite Tools
             </h2>
-            <p className="text-white/70 text-lg">
+            <p className="text-white/70 text-xl leading-relaxed">
               We deliver your virtual tours on any platform, ensuring seamless integration
               with your existing systems.
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
             {platforms.map((platform) => (
               <span
                 key={platform}
-                className="px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white font-medium hover:bg-white/20 transition-colors"
+                className="px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white text-lg font-medium hover:bg-white/20 transition-colors"
               >
                 {platform}
               </span>
@@ -143,30 +143,30 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 lg:py-32 bg-gradient-to-br from-[#0066FF] to-[#0052CC] relative overflow-hidden">
+      <section className="py-32 lg:py-40 bg-gradient-to-br from-[#0066FF] to-[#0052CC] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
               Ready to Showcase Your Space?
             </h2>
-            <p className="text-white/80 text-lg mb-10">
+            <p className="text-white/80 text-xl leading-relaxed mb-12">
               Get a free consultation and discover how 360° virtual tours can transform
               the way you present your property or business.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link
                 href="/contact"
-                className="btn bg-white text-[#0066FF] hover:bg-slate-100 text-lg px-8 py-4"
+                className="btn bg-white text-[#0066FF] hover:bg-slate-100 text-lg px-10 py-5"
               >
                 Get Free Quote
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 href="/portfolio"
-                className="btn bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 text-lg px-8 py-4"
+                className="btn bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 text-lg px-10 py-5"
               >
                 View Portfolio
               </Link>

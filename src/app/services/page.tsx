@@ -34,23 +34,23 @@ export default async function ServicesPage() {
   return (
     <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-40 pb-24 mb-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-44 pb-32 mb-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
               What We Offer
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
               Professional 360° Services
             </h1>
-            <p className="text-xl text-white/70 mb-10">
+            <p className="text-xl md:text-2xl text-white/70 mb-12 leading-relaxed">
               From photography to complete virtual tour solutions, we provide end-to-end services
               to bring your spaces to life in stunning 360°.
             </p>
-            <Link href="/contact" className="btn btn-primary text-lg px-8 py-4">
+            <Link href="/contact" className="btn btn-primary text-lg px-10 py-5">
               <Phone className="w-5 h-5" />
               Get a Free Quote
             </Link>
@@ -59,8 +59,8 @@ export default async function ServicesPage() {
       </section>
 
       {/* Services */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="space-y-32">
+      <section className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+        <div className="space-y-40">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon] || Camera;
             const isEven = index % 2 === 0;
@@ -75,41 +75,41 @@ export default async function ServicesPage() {
               >
                 {/* Content */}
                 <div className={!isEven ? 'lg:order-2' : ''}>
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0066FF]/10 to-[#00D4FF]/10 flex items-center justify-center mb-6">
-                    <Icon className="w-8 h-8 text-[#0066FF]" />
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0066FF]/10 to-[#00D4FF]/10 flex items-center justify-center mb-8">
+                    <Icon className="w-10 h-10 text-[#0066FF]" />
                   </div>
 
-                  <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                  <h2 className="text-4xl font-bold text-slate-900 mb-6">
                     {service.title}
                   </h2>
 
-                  <p className="text-lg text-slate-600 mb-6">
+                  <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                     {service.description}
                   </p>
 
                   {/* Features */}
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-4 mb-10">
                     {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <Check className="w-4 h-4 text-green-600" />
+                      <li key={i} className="flex items-start gap-4">
+                        <div className="w-7 h-7 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <Check className="w-5 h-5 text-green-600" />
                         </div>
-                        <span className="text-slate-700">{feature}</span>
+                        <span className="text-slate-700 text-lg">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
                   {/* Pricing & CTA */}
-                  <div className="flex flex-wrap items-center gap-6">
+                  <div className="flex flex-wrap items-center gap-8">
                     {service.pricing && (
                       <div>
                         <span className="text-slate-500 text-sm">Starting at</span>
-                        <div className="text-3xl font-bold text-[#0066FF]">
+                        <div className="text-4xl font-bold text-[#0066FF]">
                           {formatPrice(service.pricing.startingAt, service.pricing.currency)}
                         </div>
                       </div>
                     )}
-                    <Link href="/contact" className="btn btn-primary">
+                    <Link href="/contact" className="btn btn-primary px-8 py-4 text-lg">
                       Get Started
                       <ArrowRight className="w-5 h-5" />
                     </Link>
@@ -144,21 +144,21 @@ export default async function ServicesPage() {
       </section>
 
       {/* Platform Support */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-32">
-        <div className="bg-slate-900 rounded-3xl p-12 text-white relative overflow-hidden">
+      <section className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 mt-40">
+        <div className="bg-slate-900 rounded-3xl p-16 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#0066FF]/20 rounded-full blur-3xl" />
 
           <div className="relative z-10 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-6">
               Compatible with All Major Platforms
             </h2>
-            <p className="text-white/70 mb-8">
+            <p className="text-white/70 text-xl mb-10 leading-relaxed">
               We deliver your virtual tours on your preferred platform, ensuring seamless integration
               with your existing systems and workflows.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-5 mb-10">
               {[
                 'Matterport',
                 'CloudPano',
@@ -170,14 +170,14 @@ export default async function ServicesPage() {
               ].map((platform) => (
                 <span
                   key={platform}
-                  className="px-6 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white font-medium"
+                  className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm text-white text-lg font-medium"
                 >
                   {platform}
                 </span>
               ))}
             </div>
 
-            <Link href="/contact" className="btn bg-white text-slate-900 hover:bg-slate-100">
+            <Link href="/contact" className="btn bg-white text-slate-900 hover:bg-slate-100 px-10 py-5 text-lg">
               Discuss Your Project
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -186,17 +186,17 @@ export default async function ServicesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-32">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">
+      <section className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 mt-40">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-slate-600">
+          <p className="text-slate-600 text-xl">
             Common questions about our 360° virtual tour services
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-3xl mx-auto space-y-8">
           {[
             {
               q: 'How long does it take to create a virtual tour?',
@@ -223,13 +223,13 @@ export default async function ServicesPage() {
               key={index}
               className="group bg-white border border-slate-200 rounded-xl overflow-hidden"
             >
-              <summary className="flex items-center justify-between p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#0066FF] transition-colors">
+              <summary className="flex items-center justify-between p-8 cursor-pointer font-semibold text-slate-900 text-lg hover:text-[#0066FF] transition-colors">
                 {faq.q}
                 <span className="text-[#0066FF] group-open:rotate-180 transition-transform">
                   <ArrowRight className="w-5 h-5 rotate-90" />
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-slate-600">
+              <div className="px-8 pb-8 text-slate-600 text-lg leading-relaxed">
                 {faq.a}
               </div>
             </details>
@@ -238,21 +238,21 @@ export default async function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-32 mb-24">
-        <div className="bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-3xl p-12 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">
+      <section className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 mt-40 mb-32">
+        <div className="bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-3xl p-16 text-center text-white">
+          <h2 className="text-4xl font-bold mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-white/80 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
             Contact us today for a free consultation and quote. We&apos;ll help you choose
             the perfect service package for your needs.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/contact" className="btn bg-white text-[#0066FF]">
+          <div className="flex flex-wrap justify-center gap-6">
+            <Link href="/contact" className="btn bg-white text-[#0066FF] px-10 py-5 text-lg">
               <Phone className="w-5 h-5" />
               Contact Us
             </Link>
-            <Link href="/portfolio" className="btn border-2 border-white text-white hover:bg-white hover:text-[#0066FF]">
+            <Link href="/portfolio" className="btn border-2 border-white text-white hover:bg-white hover:text-[#0066FF] px-10 py-5 text-lg">
               View Portfolio
             </Link>
           </div>
