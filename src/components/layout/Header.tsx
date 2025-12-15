@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Camera, Phone, Search } from 'lucide-react';
+import { Menu, X, Phone, Search } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navigation = [
@@ -54,24 +55,26 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#0066FF] to-[#00D4FF] shadow-lg">
-              <Camera className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className={cn(
-                'font-bold text-lg lg:text-xl tracking-tight',
-                isTransparent ? 'text-white' : 'text-slate-900'
-              )}>
-                Z360
-              </span>
-              <span className={cn(
-                'text-[10px] lg:text-xs font-medium tracking-wider uppercase hidden sm:block',
-                isTransparent ? 'text-white/70' : 'text-slate-500'
-              )}>
-                Virtual Tours
-              </span>
-            </div>
+          <Link href="/" className="flex items-center">
+            {isTransparent ? (
+              <Image
+                src="/images/logo.svg"
+                alt="Z360 Virtual Tours"
+                width={180}
+                height={50}
+                className="h-10 lg:h-12 w-auto"
+                priority
+              />
+            ) : (
+              <Image
+                src="/images/logo-dark.svg"
+                alt="Z360 Virtual Tours"
+                width={180}
+                height={50}
+                className="h-10 lg:h-12 w-auto"
+                priority
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}

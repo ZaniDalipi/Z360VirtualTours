@@ -1,6 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
-  Camera,
   Mail,
   Phone,
   MapPin,
@@ -88,18 +88,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#0066FF] to-[#00D4FF]">
-                <Camera className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-xl tracking-tight text-white">
-                  Z360
-                </span>
-                <span className="text-xs font-medium tracking-wider uppercase text-slate-400">
-                  Virtual Tours
-                </span>
-              </div>
+            <Link href="/" className="inline-block mb-6">
+              <Image
+                src="/images/logo.svg"
+                alt="Z360 Virtual Tours"
+                width={180}
+                height={50}
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="text-slate-400 mb-6 max-w-sm">
               Professional 360° virtual tour services that transform spaces into immersive digital experiences. Trusted by businesses worldwide.

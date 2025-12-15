@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <!-- Z Letter - Bold Serif Style with Italic -->
+  <text x="8" y="60" font-family="Georgia, Times, serif" font-size="60" font-weight="bold" font-style="italic" fill="#0F172A">Z</text>
+
+  <!-- Camera Tag/Keychain Icon (Insta360 style) -->
+  <g transform="translate(50, 4)">
+    <!-- Tag shape with hole -->
+    <path d="M30 0H10C4.48 0 0 4.48 0 10v32c0 2.12 0.84 4.16 2.34 5.66L18 63.3c1.17 1.17 2.76 1.83 4.42 1.83s3.25-0.66 4.42-1.83l15.66-15.66C44.16 46.16 45 44.12 45 42V10c0-5.52-4.48-10-10-10z" fill="#0F172A"/>
+    <!-- Hole at top -->
+    <circle cx="22.5" cy="12" r="5" fill="#E8D5B5"/>
+    <!-- Camera lens -->
+    <circle cx="22.5" cy="30" r="10" fill="#E8D5B5"/>
+    <circle cx="22.5" cy="30" r="5" fill="#0F172A"/>
+  </g>
+
+  <!-- 360 with circular arrows -->
+  <g transform="translate(58, 42)">
+    <!-- 360 text -->
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">360</text>
+    <!-- Circular arrow - top arc -->
+    <path d="M40 10c0-5-4-9-9-9" stroke="#0F172A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Arrow head top -->
+    <polygon points="31,-1 35,2 31,5" fill="#0F172A"/>
+    <!-- Circular arrow - bottom arc -->
+    <path d="M22 10c0 5 4 9 9 9" stroke="#0F172A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Arrow head bottom -->
+    <polygon points="31,21 27,18 31,15" fill="#0F172A"/>
+  </g>
+
+  <!-- 360 VIRTUAL TOURS text -->
+  <text x="130" y="32" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#0F172A">360 VIRTUAL</text>
+  <text x="130" y="54" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#0F172A">TOURS</text>
+</svg>
