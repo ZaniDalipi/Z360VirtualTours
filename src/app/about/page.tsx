@@ -76,12 +76,12 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-40 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
                 About Us
@@ -122,9 +122,9 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             <div>
               <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
                 Our Story
@@ -177,9 +177,9 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="section bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+      <section className="py-24 lg:py-32 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid md:grid-cols-2 gap-10">
             <div className="bg-white rounded-2xl p-8 border border-slate-200">
               <div className="w-14 h-14 rounded-xl bg-[#0066FF]/10 flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-[#0066FF]" />
@@ -208,8 +208,8 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
               What Drives Us
@@ -243,8 +243,8 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="section bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
               Meet the Team
@@ -280,9 +280,9 @@ export default function AboutPage() {
       <TestimonialsSection />
 
       {/* Why Choose Us */}
-      <section className="section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             <div>
               <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
                 Why Choose Us
@@ -340,7 +340,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 mb-24">
         <div className="bg-slate-900 rounded-3xl p-12 text-center text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
           <div className="relative z-10">

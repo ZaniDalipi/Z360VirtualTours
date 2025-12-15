@@ -59,11 +59,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-40 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
           <div className="max-w-3xl">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               Get in Touch
@@ -80,9 +80,9 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12">
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid lg:grid-cols-3 gap-16">
             {/* Contact Info */}
             <div className="lg:col-span-1 space-y-8">
               {/* Contact Cards */}
@@ -356,7 +356,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20">
         <div className="bg-slate-200 rounded-2xl h-96 flex items-center justify-center">
           <div className="text-center">
             <MapPin className="w-12 h-12 text-slate-400 mx-auto mb-4" />
@@ -366,8 +366,8 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-        <div className="bg-slate-50 rounded-2xl p-8 lg:p-12">
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 mb-24">
+        <div className="bg-slate-50 rounded-2xl p-10 lg:p-14">
           <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
             Quick Answers
           </h2>
