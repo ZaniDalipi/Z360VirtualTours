@@ -2,7 +2,6 @@ import Hero from '@/components/sections/Hero';
 import FeaturedTours from '@/components/sections/FeaturedTours';
 import ServicesSection from '@/components/sections/ServicesSection';
 import CategoriesSection from '@/components/sections/CategoriesSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import Link from 'next/link';
 import { ArrowRight, Play, CheckCircle } from 'lucide-react';
 
@@ -157,9 +156,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <TestimonialsSection />
 
       {/* Final CTA Section */}
       <section className="py-24 lg:py-32 bg-gradient-to-br from-[#0066FF] to-[#0052CC] text-white relative overflow-hidden">

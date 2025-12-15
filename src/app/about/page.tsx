@@ -2,17 +2,14 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import {
   Camera,
-  Users,
-  Award,
   Target,
   Heart,
   Lightbulb,
+  Users,
   ArrowRight,
   CheckCircle,
-  Star,
   Globe,
 } from 'lucide-react';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -49,29 +46,6 @@ const values = [
   },
 ];
 
-const team = [
-  {
-    name: 'Alex Johnson',
-    role: 'Founder & CEO',
-    bio: 'With 10+ years in digital media, Alex founded Z360 to revolutionize how spaces are showcased online.',
-  },
-  {
-    name: 'Sarah Chen',
-    role: 'Lead Photographer',
-    bio: 'Award-winning photographer specializing in architectural and 360° imaging.',
-  },
-  {
-    name: 'Michael Park',
-    role: 'Technical Director',
-    bio: 'Expert in VR/AR technology and virtual tour platform integration.',
-  },
-  {
-    name: 'Emily Rodriguez',
-    role: 'Client Success Manager',
-    bio: 'Dedicated to ensuring every client achieves their virtual tour goals.',
-  },
-];
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
@@ -79,44 +53,44 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-40 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-[#00D4FF]/10 rounded-full blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
-                About Us
-              </span>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Transforming Spaces Into
-                <span className="block gradient-text">Digital Experiences</span>
-              </h1>
-              <p className="text-xl text-white/70 mb-8">
-                Z360 Virtual Tours is your trusted partner for professional 360° virtual tour services.
-                We help businesses showcase their spaces like never before.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/portfolio" className="btn btn-primary">
-                  View Our Work
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link href="/contact" className="btn border-2 border-white text-white hover:bg-white hover:text-slate-900">
-                  Get in Touch
-                </Link>
-              </div>
+          <div className="text-center max-w-4xl mx-auto">
+            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+              About Us
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Transforming Spaces Into
+              <span className="block gradient-text mt-2">Digital Experiences</span>
+            </h1>
+            <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
+              Z360 Virtual Tours is your trusted partner for professional 360° virtual tour services.
+              We help businesses showcase their spaces like never before.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/portfolio" className="btn btn-primary text-lg px-8 py-4">
+                View Our Work
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link href="/contact" className="btn border-2 border-white text-white hover:bg-white hover:text-slate-900 text-lg px-8 py-4">
+                Get in Touch
+              </Link>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <div
-                  key={index}
-                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center"
-                >
-                  <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                  <div className="text-white/60">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+      {/* Stats */}
+      <section className="py-16 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">{stat.value}</div>
+                <div className="text-slate-600">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -124,53 +98,31 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            <div>
-              <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
-                Our Story
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                From Passion to Purpose
-              </h2>
-              <div className="space-y-4 text-slate-600">
-                <p>
-                  Z360 Virtual Tours was founded with a simple mission: to help businesses
-                  showcase their spaces in the most immersive way possible. What started as
-                  a passion for photography and technology has grown into a full-service
-                  virtual tour company serving clients worldwide.
-                </p>
-                <p>
-                  We recognized early on that traditional photography couldn&apos;t capture the
-                  true essence of a space. 360° virtual tours offer something different &mdash;
-                  they let viewers explore, discover, and connect with spaces in ways that
-                  static images never could.
-                </p>
-                <p>
-                  Today, we work with businesses across all industries, from real estate and
-                  hospitality to education and healthcare. Our team combines technical expertise
-                  with creative vision to deliver virtual tours that truly stand out.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-slate-200 to-slate-300 rounded-3xl relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Camera className="w-24 h-24 text-slate-400" />
-                </div>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 border border-slate-100">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-[#0066FF]/10 flex items-center justify-center">
-                    <Award className="w-6 h-6 text-[#0066FF]" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-slate-900">Award Winning</div>
-                    <div className="text-sm text-slate-500">Virtual Tours</div>
-                  </div>
-                </div>
-              </div>
+          <div className="text-center max-w-4xl mx-auto">
+            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+              Our Story
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-8">
+              From Passion to Purpose
+            </h2>
+            <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
+              <p>
+                Z360 Virtual Tours was founded with a simple mission: to help businesses
+                showcase their spaces in the most immersive way possible. What started as
+                a passion for photography and technology has grown into a full-service
+                virtual tour company serving clients worldwide.
+              </p>
+              <p>
+                We recognized early on that traditional photography couldn&apos;t capture the
+                true essence of a space. 360° virtual tours offer something different &mdash;
+                they let viewers explore, discover, and connect with spaces in ways that
+                static images never could.
+              </p>
+              <p>
+                Today, we work with businesses across all industries, from real estate and
+                hospitality to education and healthcare. Our team combines technical expertise
+                with creative vision to deliver virtual tours that truly stand out.
+              </p>
             </div>
           </div>
         </div>
@@ -179,25 +131,33 @@ export default function AboutPage() {
       {/* Mission & Vision */}
       <section className="py-24 lg:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-white rounded-2xl p-8 border border-slate-200">
-              <div className="w-14 h-14 rounded-xl bg-[#0066FF]/10 flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-[#0066FF]" />
+          <div className="text-center mb-16">
+            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+              What We Stand For
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900">
+              Mission & Vision
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-10 border border-slate-200 text-center">
+              <div className="w-16 h-16 rounded-xl bg-[#0066FF]/10 flex items-center justify-center mb-6 mx-auto">
+                <Target className="w-8 h-8 text-[#0066FF]" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
-              <p className="text-slate-600">
+              <p className="text-slate-600 text-lg">
                 To empower businesses with immersive 360° virtual experiences that engage
                 audiences, build trust, and drive results. We believe every space has a
                 story to tell, and we&apos;re here to help you tell it.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 border border-slate-200">
-              <div className="w-14 h-14 rounded-xl bg-[#FF6B00]/10 flex items-center justify-center mb-6">
-                <Globe className="w-7 h-7 text-[#FF6B00]" />
+            <div className="bg-white rounded-2xl p-10 border border-slate-200 text-center">
+              <div className="w-16 h-16 rounded-xl bg-[#FF6B00]/10 flex items-center justify-center mb-6 mx-auto">
+                <Globe className="w-8 h-8 text-[#FF6B00]" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h3>
-              <p className="text-slate-600">
+              <p className="text-slate-600 text-lg">
                 To be the leading provider of virtual tour solutions worldwide, setting
                 the standard for quality, innovation, and customer service in the
                 immersive media industry.
@@ -211,29 +171,29 @@ export default function AboutPage() {
       <section className="py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
+            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               What Drives Us
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
               Our Core Values
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">
               These principles guide everything we do and shape how we work with our clients.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
                 <div
                   key={index}
-                  className="text-center p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#0066FF]/30 hover:shadow-lg transition-all"
+                  className="text-center p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#0066FF]/30 hover:shadow-lg transition-all"
                 >
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0066FF]/10 to-[#00D4FF]/10 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0066FF]/10 to-[#00D4FF]/10 flex items-center justify-center mx-auto mb-6">
                     <Icon className="w-8 h-8 text-[#0066FF]" />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">{value.title}</h3>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">{value.title}</h3>
                   <p className="text-slate-600">{value.description}</p>
                 </div>
               );
@@ -242,123 +202,63 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Why Choose Us */}
       <section className="py-24 lg:py-32 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-16">
-            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
-              Meet the Team
+          <div className="text-center max-w-4xl mx-auto">
+            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
+              Why Choose Us
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              The People Behind Z360
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8">
+              What Sets Us Apart
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Our talented team brings together expertise in photography, technology,
-              and customer service to deliver exceptional results.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors"
-              >
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white">
-                  {member.name.split(' ').map(n => n[0]).join('')}
+            <div className="grid md:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
+              {[
+                'Professional-grade equipment and techniques',
+                'Experienced photographers with an eye for detail',
+                'Fast turnaround without compromising quality',
+                'Dedicated support from start to finish',
+                'Competitive pricing with transparent quotes',
+                'Ongoing partnership and tour maintenance',
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 text-[#00D4FF] flex-shrink-0 mt-0.5" />
+                  <span className="text-white/80 text-lg">{item}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
-                <p className="text-[#00D4FF] text-sm mb-3">{member.role}</p>
-                <p className="text-slate-400 text-sm">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <TestimonialsSection />
-
-      {/* Why Choose Us */}
-      <section className="py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            <div>
-              <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-2 block">
-                Why Choose Us
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                What Sets Us Apart
-              </h2>
-              <div className="space-y-4">
-                {[
-                  'Professional-grade equipment and techniques',
-                  'Experienced photographers with an eye for detail',
-                  'Fast turnaround without compromising quality',
-                  'Dedicated support from start to finish',
-                  'Competitive pricing with transparent quotes',
-                  'Ongoing partnership and tour maintenance',
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-8">
-                <Link href="/contact" className="btn btn-primary">
-                  Start Your Project
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </div>
+              ))}
             </div>
-
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#0066FF] to-[#0052CC] rounded-3xl p-8 text-white">
-                <div className="flex items-center gap-2 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-                  ))}
-                </div>
-                <blockquote className="text-xl font-medium mb-6">
-                  &ldquo;Z360 transformed how we showcase our properties. The virtual tours
-                  have increased our engagement by 300% and significantly reduced time-to-sale.&rdquo;
-                </blockquote>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center font-bold">
-                    JD
-                  </div>
-                  <div>
-                    <div className="font-semibold">John Davidson</div>
-                    <div className="text-white/70 text-sm">CEO, Premier Realty</div>
-                  </div>
-                </div>
-              </div>
+            <div className="mt-12">
+              <Link href="/contact" className="btn bg-white text-slate-900 hover:bg-slate-100 text-lg px-10 py-4">
+                Start Your Project
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 mb-24">
-        <div className="bg-slate-900 rounded-3xl p-12 text-center text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
-          <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Work With Us?
-            </h2>
-            <p className="text-white/70 mb-8 max-w-2xl mx-auto">
-              Let&apos;s create something amazing together. Contact us today to discuss
-              your virtual tour project.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact" className="btn bg-white text-slate-900 hover:bg-slate-100">
-                Contact Us
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link href="/portfolio" className="btn border-2 border-white text-white hover:bg-white hover:text-slate-900">
-                View Portfolio
-              </Link>
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-3xl p-12 lg:p-16 text-center text-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Ready to Work With Us?
+              </h2>
+              <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
+                Let&apos;s create something amazing together. Contact us today to discuss
+                your virtual tour project.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link href="/contact" className="btn bg-white text-[#0066FF] hover:bg-slate-100 text-lg px-10 py-4">
+                  Contact Us
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+                <Link href="/portfolio" className="btn border-2 border-white text-white hover:bg-white hover:text-[#0066FF] text-lg px-10 py-4">
+                  View Portfolio
+                </Link>
+              </div>
             </div>
           </div>
         </div>

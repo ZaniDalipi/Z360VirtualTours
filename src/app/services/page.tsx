@@ -39,18 +39,18 @@ export default async function ServicesPage() {
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#0066FF]/10 rounded-full blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-          <div className="max-w-3xl">
+          <div className="text-center max-w-3xl mx-auto">
             <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
               What We Offer
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Professional 360° Services
             </h1>
-            <p className="text-xl text-white/70 mb-8">
+            <p className="text-xl text-white/70 mb-10">
               From photography to complete virtual tour solutions, we provide end-to-end services
               to bring your spaces to life in stunning 360°.
             </p>
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary text-lg px-8 py-4">
               <Phone className="w-5 h-5" />
               Get a Free Quote
             </Link>
