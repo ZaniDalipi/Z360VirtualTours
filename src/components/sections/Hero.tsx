@@ -1,120 +1,102 @@
 'use client';
 
 import Link from 'next/link';
-import { Play, ArrowRight, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-
-const stats = [
-  { value: '500+', label: 'Tours Created' },
-  { value: '98%', label: 'Satisfaction' },
-  { value: '50+', label: 'Industries' },
-  { value: '24/7', label: 'Support' },
-];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20" />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#0066FF]/15 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#00D4FF]/10 rounded-full blur-3xl" />
+    <section className="relative bg-slate-900 overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-blue-500/20 rounded-full blur-[120px]" />
       </div>
 
       {/* Content */}
-      <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 pt-56 lg:pt-64 pb-40 lg:pb-48">
-        <div className="text-center max-w-5xl mx-auto">
-          {/* Badge */}
-          <motion.div
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 pt-48 pb-32 lg:pt-56 lg:pb-40">
+        {/* Centered content */}
+        <div className="text-center">
+          {/* Label */}
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-4 px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-16"
+            transition={{ duration: 0.6 }}
+            className="text-blue-400 text-sm font-semibold tracking-wide uppercase mb-8"
           >
-            <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-            <span className="text-white/80 text-lg font-medium">Trusted by 500+ Businesses Worldwide</span>
-          </motion.div>
+            Professional Virtual Tours
+          </motion.p>
 
-          {/* Headline */}
+          {/* Main headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white mb-12 leading-[1.1]"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-8"
           >
-            Transform Your Space Into
-            <span className="block gradient-text mt-4">Immersive 360° Experiences</span>
+            Immersive 360° experiences
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+              for your space
+            </span>
           </motion.h1>
 
           {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl sm:text-2xl lg:text-3xl text-white/70 mb-16 max-w-4xl mx-auto leading-relaxed"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            Professional virtual tours that showcase your properties, businesses, and venues.
-            Compatible with Matterport, CloudPano, Kuula, and all major platforms.
+            We create stunning virtual tours that showcase your properties,
+            businesses, and venues. Compatible with all major platforms.
           </motion.p>
 
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row justify-center gap-6 mb-24"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center justify-center gap-3 bg-[#0066FF] hover:bg-[#0052CC] text-white text-lg lg:text-xl font-semibold px-12 py-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-white/90 px-8 py-4 rounded-full font-semibold transition-all"
             >
-              <Play className="w-6 h-6 fill-current" />
               View Portfolio
+              <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 text-lg lg:text-xl font-semibold px-12 py-6 rounded-2xl transition-all duration-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 text-white hover:bg-white/20 px-8 py-4 rounded-full font-semibold border border-white/20 transition-all"
             >
               Get Free Quote
-              <ArrowRight className="w-6 h-6" />
             </Link>
           </motion.div>
+        </div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16 max-w-5xl mx-auto pt-16 border-t border-white/10"
-          >
-            {stats.map((stat, index) => (
+        {/* Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-24 pt-12 border-t border-white/10"
+        >
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { value: '500+', label: 'Tours Created' },
+              { value: '98%', label: 'Satisfaction' },
+              { value: '50+', label: 'Industries' },
+              { value: '24/7', label: 'Support' },
+            ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl lg:text-6xl font-bold gradient-text mb-4">
-                  {stat.value}
-                </div>
-                <div className="text-white/50 text-lg lg:text-xl">{stat.label}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.value}</div>
+                <div className="text-sm text-white/50">{stat.label}</div>
               </div>
             ))}
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-        className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-white/40"
-      >
-        <span className="text-sm uppercase tracking-widest">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-7 h-12 rounded-full border-2 border-white/20 flex items-start justify-center pt-2"
-        >
-          <div className="w-2 h-2 rounded-full bg-white/60" />
+          </div>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }

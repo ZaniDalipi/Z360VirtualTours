@@ -32,28 +32,23 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
   const categoriesData = categories || await getCategories({ active: true });
 
   return (
-    <section className="py-40 lg:py-56 bg-slate-900 text-white relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#0066FF]/10 rounded-full blur-3xl" />
-
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+    <section className="py-24 lg:py-32 bg-slate-900">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-24 lg:mb-32">
-          <span className="inline-block text-[#00D4FF] font-semibold text-sm uppercase tracking-widest mb-8">
+        <div className="text-center mb-20">
+          <p className="text-blue-400 text-sm font-semibold uppercase tracking-wide mb-4">
             Industries We Serve
-          </span>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 leading-tight">
-            Virtual Tours for Every Industry
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Virtual tours for every industry
           </h2>
-          <p className="text-white/70 text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto">
-            From real estate to hospitality, education to healthcare - we create immersive
-            experiences tailored to your needs.
+          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+            From real estate to hospitality, we create immersive experiences for all businesses.
           </p>
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {categoriesData.map((category) => {
             const Icon = iconMap[category.icon] || Building2;
 
@@ -61,12 +56,12 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
               <Link
                 key={category.id}
                 href={`/portfolio?category=${category.slug}`}
-                className="group flex flex-col items-center p-8 lg:p-10 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#0066FF]/50 transition-all duration-500 text-center"
+                className="group flex flex-col items-center p-6 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
               >
-                <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-blue-500/20">
-                  <Icon className="w-10 h-10 lg:w-12 lg:h-12 text-white" />
+                <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Icon className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-white text-lg lg:text-xl font-semibold group-hover:text-[#00D4FF] transition-colors">
+                <span className="text-white font-medium text-center">
                   {category.name}
                 </span>
               </Link>
@@ -75,16 +70,16 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-20 lg:mt-24">
-          <p className="text-white/60 text-lg lg:text-xl mb-10">
-            Don&apos;t see your industry? We work with businesses of all types.
+        <div className="text-center mt-16">
+          <p className="text-white/50 mb-6">
+            Don&apos;t see your industry? We work with all types of businesses.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-100 text-lg lg:text-xl font-semibold px-12 py-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-white/90 px-8 py-4 rounded-full font-semibold transition-all"
           >
             Contact Us
-            <ArrowRight className="w-6 h-6" />
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
