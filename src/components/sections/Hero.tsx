@@ -13,7 +13,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20" />
@@ -21,8 +21,8 @@ export default function Hero() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#00D4FF]/10 rounded-full blur-3xl" />
       </div>
 
-      {/* Content */}
-      <div className="w-full max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10 py-32">
+      {/* Content - pt-48 accounts for fixed header (top bar + main header = ~130px) */}
+      <div className="w-full max-w-6xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10 pt-48 pb-32">
         <div className="text-center">
           {/* Badge */}
           <motion.div
