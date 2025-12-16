@@ -2,7 +2,7 @@ import Hero from '@/components/sections/Hero';
 import ServicesSection from '@/components/sections/ServicesSection';
 import CategoriesSection from '@/components/sections/CategoriesSection';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, Camera, Globe, Box, Plane, Map, Glasses } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const processSteps = [
   {
@@ -39,63 +39,67 @@ const platforms = [
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <Hero />
 
-      {/* How It Works */}
-      <section className="py-32 lg:py-40 bg-white">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
+      {/* How It Works Section */}
+      <section className="py-40 lg:py-56 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          {/* Section Header */}
+          <div className="text-center max-w-4xl mx-auto mb-24 lg:mb-32">
+            <span className="inline-block text-[#0066FF] font-semibold text-sm uppercase tracking-widest mb-8">
               Our Process
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-10 leading-tight">
               How We Create Your Tour
             </h2>
-            <p className="text-slate-600 text-xl leading-relaxed">
+            <p className="text-slate-600 text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto">
               From consultation to delivery, we handle everything to ensure your virtual tour
               exceeds expectations.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+          {/* Process Steps */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-12">
             {processSteps.map((item, index) => (
-              <div key={index} className="text-center p-6">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mx-auto mb-8">
-                  <span className="text-white font-bold text-2xl">{item.step}</span>
+              <div key={index} className="text-center">
+                <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-[#0066FF] to-[#00D4FF] flex items-center justify-center mx-auto mb-10 shadow-lg shadow-blue-500/20">
+                  <span className="text-white font-bold text-3xl">{item.step}</span>
                 </div>
-                <h3 className="text-2xl font-semibold text-slate-900 mb-4">{item.title}</h3>
-                <p className="text-slate-600 text-lg leading-relaxed">{item.description}</p>
+                <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-5">{item.title}</h3>
+                <p className="text-slate-600 text-lg lg:text-xl leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services */}
+      {/* Services Section */}
       <ServicesSection />
 
-      {/* Categories */}
+      {/* Categories Section */}
       <CategoriesSection />
 
-      {/* Why Choose Us */}
-      <section className="py-32 lg:py-40 bg-white">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
+      {/* Why Choose Us Section */}
+      <section className="py-40 lg:py-56 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          {/* Section Header */}
+          <div className="text-center max-w-4xl mx-auto mb-24 lg:mb-32">
+            <span className="inline-block text-[#0066FF] font-semibold text-sm uppercase tracking-widest mb-8">
               Why Choose Us
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-10 leading-tight">
               The Z360 Advantage
             </h2>
-            <p className="text-slate-600 text-xl leading-relaxed">
+            <p className="text-slate-600 text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto">
               We combine cutting-edge technology with creative expertise to deliver
               virtual tours that captivate and convert.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {/* Advantage Items */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 max-w-6xl mx-auto">
             {[
               'Professional 360° photography with HDR processing',
               'Compatible with all major platforms',
@@ -104,36 +108,40 @@ export default function HomePage() {
               'Fast turnaround and dedicated support',
               'SEO-optimized tours for better visibility',
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-5 p-8 rounded-2xl bg-slate-50 hover:bg-slate-100 transition-colors">
-                <CheckCircle className="w-7 h-7 text-[#0066FF] flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700 text-lg">{item}</span>
+              <div key={index} className="flex items-start gap-6 p-8 lg:p-10 rounded-3xl bg-slate-50 hover:bg-slate-100 transition-all duration-300">
+                <div className="w-12 h-12 rounded-2xl bg-[#0066FF]/10 flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-6 h-6 text-[#0066FF]" />
+                </div>
+                <span className="text-slate-700 text-lg lg:text-xl leading-relaxed pt-2">{item}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Platforms */}
-      <section className="py-32 lg:py-40 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="text-[#00D4FF] font-semibold text-sm uppercase tracking-wider mb-6 block">
+      {/* Platforms Section */}
+      <section className="py-40 lg:py-56 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          {/* Section Header */}
+          <div className="text-center max-w-4xl mx-auto mb-24 lg:mb-32">
+            <span className="inline-block text-[#00D4FF] font-semibold text-sm uppercase tracking-widest mb-8">
               Platform Support
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 leading-tight">
               Works With Your Favorite Tools
             </h2>
-            <p className="text-white/70 text-xl leading-relaxed">
+            <p className="text-white/70 text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto">
               We deliver your virtual tours on any platform, ensuring seamless integration
               with your existing systems.
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+          {/* Platform Tags */}
+          <div className="flex flex-wrap justify-center gap-5 lg:gap-6 max-w-5xl mx-auto">
             {platforms.map((platform) => (
               <span
                 key={platform}
-                className="px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white text-lg font-medium hover:bg-white/20 transition-colors"
+                className="px-10 py-5 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/10 text-white text-lg lg:text-xl font-medium hover:bg-white/20 transition-all duration-300"
               >
                 {platform}
               </span>
@@ -142,31 +150,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-32 lg:py-40 bg-gradient-to-br from-[#0066FF] to-[#0052CC] relative overflow-hidden">
+      {/* Final CTA Section */}
+      <section className="py-40 lg:py-56 bg-gradient-to-br from-[#0066FF] to-[#0052CC] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-white/5 rounded-full blur-3xl" />
 
-        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 leading-tight">
               Ready to Showcase Your Space?
             </h2>
-            <p className="text-white/80 text-xl leading-relaxed mb-12">
+            <p className="text-white/80 text-xl lg:text-2xl leading-relaxed mb-16 max-w-2xl mx-auto">
               Get a free consultation and discover how 360° virtual tours can transform
               the way you present your property or business.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link
                 href="/contact"
-                className="btn bg-white text-[#0066FF] hover:bg-slate-100 text-lg px-10 py-5"
+                className="inline-flex items-center justify-center gap-3 bg-white text-[#0066FF] hover:bg-slate-100 text-lg lg:text-xl font-semibold px-12 py-6 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Get Free Quote
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-6 h-6" />
               </Link>
               <Link
                 href="/portfolio"
-                className="btn bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 text-lg px-10 py-5"
+                className="inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20 text-lg lg:text-xl font-semibold px-12 py-6 rounded-2xl transition-all duration-300"
               >
                 View Portfolio
               </Link>
@@ -174,6 +182,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
