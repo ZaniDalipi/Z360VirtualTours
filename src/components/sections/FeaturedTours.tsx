@@ -23,7 +23,7 @@ export default async function FeaturedTours({ tours, categories }: FeaturedTours
   if (toursData.length === 0) {
     return (
       <section className="py-24 lg:py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           {/* Header */}
           <div className="text-center mb-16">
             <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
@@ -84,7 +84,7 @@ export default async function FeaturedTours({ tours, categories }: FeaturedTours
 
   return (
     <section className="py-24 lg:py-32 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>

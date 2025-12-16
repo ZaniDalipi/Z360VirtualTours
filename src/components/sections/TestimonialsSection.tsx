@@ -14,7 +14,7 @@ export default async function TestimonialsSection({ testimonials }: Testimonials
   if (testimonialsData.length === 0) {
     return (
       <section className="py-24 lg:py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">
@@ -64,7 +64,7 @@ export default async function TestimonialsSection({ testimonials }: Testimonials
 
   return (
     <section className="py-24 lg:py-32 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[#0066FF] font-semibold text-sm uppercase tracking-wider mb-4 block">

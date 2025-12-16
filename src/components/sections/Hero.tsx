@@ -14,7 +14,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 pt-48 pb-32 lg:pt-56 lg:pb-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 pt-48 pb-32 lg:pt-56 lg:pb-40">
         {/* Centered content */}
         <div className="text-center">
           {/* Label */}

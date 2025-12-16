@@ -91,7 +91,7 @@ export default async function DiscoverPage() {
 
       {/* Categories */}
       <section className="py-24 lg:py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-2xl font-bold text-slate-900">Browse by Category</h2>
@@ -121,7 +121,7 @@ export default async function DiscoverPage() {
       {/* Featured Places */}
       {featuredPlaces.length > 0 && (
         <section className="py-24 lg:py-32">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -225,7 +225,7 @@ export default async function DiscoverPage() {
 
       {/* Recent Tours */}
       <section className="py-24 lg:py-32 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           <div className="flex items-center justify-between mb-8">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -273,7 +273,7 @@ export default async function DiscoverPage() {
 
       {/* Add Your Business CTA */}
       <section className="py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           <div className="bg-gradient-to-r from-[#0066FF] to-[#00D4FF] rounded-3xl p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10" />
             <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">

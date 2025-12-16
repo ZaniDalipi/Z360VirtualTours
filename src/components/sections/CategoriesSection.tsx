@@ -33,7 +33,7 @@ export default async function CategoriesSection({ categories }: CategoriesSectio
 
   return (
     <section className="py-24 lg:py-32 bg-slate-900">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         {/* Section Header */}
         <div className="text-center mb-20">
           <p className="text-blue-400 text-sm font-semibold uppercase tracking-wide mb-4">

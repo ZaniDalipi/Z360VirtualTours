@@ -12,7 +12,7 @@ export default function HomePage() {
 
       {/* How It Works */}
       <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           {/* Section Header */}
           <div className="text-center mb-20">
             <p className="text-blue-600 text-sm font-semibold uppercase tracking-wide mb-4">
@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* Why Choose Us */}
       <section className="py-24 lg:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
           {/* Section Header */}
           <div className="text-center mb-20">
             <p className="text-blue-600 text-sm font-semibold uppercase tracking-wide mb-4">
@@ -91,7 +91,7 @@ export default function HomePage() {
 
       {/* Platforms */}
       <section className="py-24 lg:py-32 bg-slate-900">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 text-center">
           <p className="text-blue-400 text-sm font-semibold uppercase tracking-wide mb-4">
             Platform Support
           </p>
@@ -117,7 +117,7 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="py-24 lg:py-32 bg-blue-600">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-8 sm:px-12 lg:px-16 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Ready to showcase your space?
           </h2>
